@@ -10,12 +10,66 @@ print (Counter(a))
 for key, c in Counter(a).most_common():
     print("{}: {}".format(key, c)) 
 """
-#Mar1-15
+"""
+P = 21(3)
+"""
+#June 2-28
 from collections import Counter
-a = [30,5,7,12,24,11,16,32,33,8,21,31,34,2,12,24,15,27,33,30,2,3,9,11,24,29,11,30,1,21,33,
-     7,9,12,24,31,21,30,24,9,10,7,14,32,16,12,15,10,1,1,16,25,21,12,27,29,31,2,16,7,1,30,
-     14,21,33,24,9]
-print (a)
+
+
+a = [1,23,21,8,24,5,14,10,26,9,
+     30,17,20
+     ]
+     
+b = [
+     5,11,8,10,
+     3,7,12,31,
+     1,30,17,14,7,29,12,2,29,13,
+     24,7,11,21,16,1,
+     3,15,
+     ]
+
+cc = [34,
+     3,30,
+     3,24,34,9,8,31,12,23,7,
+     10,11,12,
+     8,16,24,1,
+     ]
+
+d = [1,7,8,23,
+     34,
+     8,3,7,
+     31,1,8,24,34,
+     24,
+     30,24,8,14,21,
+     
+     24,34,5,12,32,
+     1,8,21,23]
+
+x = a+b+cc+d
+
 print (Counter(a))
 for key, c in Counter(a).most_common():
-    print("{}: {}".format(key, c)) 
+    print("{}: {}".format(key, c))
+print("A===============")
+
+print (Counter(b))
+for key, c in Counter(b).most_common():
+    print("{}: {}".format(key, c))
+print("B===============")
+
+print (Counter(cc))
+for key, c in Counter(cc).most_common():
+    print("{}: {}".format(key, c))
+print("CC===============")
+
+print (Counter(d))
+for key, c in Counter(d).most_common():
+    print("{}: {}".format(key, c))
+print("D===============")
+
+print (Counter(x))
+for key, c in Counter(x).most_common():
+    print("{}: {}".format(key, c))
+print("Total===============")
+
